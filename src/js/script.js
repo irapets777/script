@@ -1,13 +1,277 @@
-const secNum = 7;
-const sicret = prompt("Вгадай число")
+let fruits = [
+  "apple",
+  "banana",
+  "orange",
+  "pear",
+  "grape",
+  "pineapple",
+  "strawberry",
+  "watermelon",
+  "kiwi",
+  "mango",
+  "peach",
+  "lemon",
+  "lime",
+  "blueberry",
+  "raspberry",
+  "blackberry",
+  "apricot",
+  "cherry",
+  "coconut",
+  "fig",
+  "pomegranate",
+  "plum",
+  "nectarine",
+  "persimmon",
+  "tangerine",
+  "papaya",
+  "guava",
+  "jackfruit",
+  "lychee",
+  "starfruit",
+  "cantaloupe",
+  "honeydew",
+  "mangosteen",
+  "pawpaw",
+  "durian",
+  "tamarind",
+  "mulberry",
+  "currant",
+  "gooseberry",
+  "rambutan",
+  "longan",
+  "dragonfruit",
+  "clementine",
+  "satsuma",
+  "mandarin",
+  "tangelo",
+  "yuzu",
+  "nectarine",
+  "persimmon",
+  "tangerine",
+  "papaya",
+  "guava",
+  "jackfruit",
+  "lychee",
+  "starfruit",
+  "cantaloupe",
+  "honeydew",
+  "mangosteen",
+  "pawpaw",
+  "durian",
+  "tamarind",
+  "mulberry",
+  "currant",
+  "gooseberry",
+  "rambutan",
+  "longan",
+  "dragonfruit",
+  "clementine",
+  "satsuma",
+  "mandarin",
+  "tangelo",
+  "yuzu",
+  "nectarine",
+  "persimmon",
+  "tangerine",
+  "papaya",
+  "guava",
+  "jackfruit",
+  "lychee",
+  "starfruit",
+  "cantaloupe",
+  "honeydew",
+  "mangosteen",
+  "pawpaw",
+  "durian",
+  "tamarind",
+  "mulberry",
+  "currant",
+  "gooseberry",
+  "rambutan",
+];
 
-if (sicret == secNum ){
-  console.log("Ви вгадали")
-} else if (sicret < secNum){
-  console.log("Введіть більше число")
-} else {
-  console.log("Введіть менше число")
-}
+// let counter = fruits.length;
+// let counterloop = 0;
+// let flag = true;
+
+// while (flag) {
+//   counterloop++;
+
+//   if (counterloop ==10) {
+//     continue;
+//   } else if (counterloop ==20) {
+//     break;
+//   }
+//   console.log(counterloop);
+// }
+
+// for(let i = 0; i < counter;  i++) {
+//   console.log(fruits[i]);
+// }
+
+
+// let counter = 0;
+// fruits.forEach(function (item){
+//   if(item[0] == "a"){
+//     console.log(item);
+//     counter++;
+//   }
+
+
+//   // console.log(item[0]);
+// });
+
+
+
+// let counter = 0;
+// fruits.forEach(function (item) {
+//   if (item[0] == "a") {
+//     console.log(item);
+//     counter++;
+//   }
+// });
+
+// while (fruits.length > 0) {
+//   let item = fruits.pop();
+//   if (item[0] == "a") {
+//     console.log(item);
+//     counter++;
+//   }
+// }
+
+// for (let i = 0; i < fruits.length; i++) {
+//   if (fruits[i][0] == "a") {
+//     console.log(fruits[i]);
+//     counter++;
+//   }
+// }
+
+// console.log(counter);
+
+
+let familyList = [
+  {
+    name: "John Doe",
+    age: 25,
+  },
+  {
+    name: "Jane Doe",
+    age: 24,
+  },
+  {
+    name: "Jack Doe",
+    age: 18,
+  },
+  {
+    name: "Janifer Doe",
+    age: 14,
+  },
+  {
+    name: "Sem Doe",
+    age: 24,
+  },
+];
+
+// console.log(familyList[0].name + " " + familyList[0].age);
+familyList.forEach((item)=>{
+  if(item.age >= 21){
+    console.log('You adult!')
+  }
+})
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const position = fruits.indexOf("cantaloupe");
+// console.log(position);
+// if(position >= 0){
+//   console.log(`I like a ${fruits[position]}`)
+// }else{
+//   console.log('Error')
+// }
+
+// let someVar = "aPPle";
+// let someThing = someVar.toLowerCase();
+
+// let target = fruits[8];
+// const firstLetter = target[0].toUpperCase();
+// let newWord = firstLetter + target.slice(1, target.length);
+// console.log(newWord);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const fruitsName = fruits.indexOf(position)
+// console.log(fruitsName)
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const secNum = 7;
+// const sicret = prompt("Вгадай число")
+
+// if (sicret == secNum ){
+//   console.log("Ви вгадали")
+// } else if (sicret < secNum){
+//   console.log("Введіть більше число")
+// } else {
+//   console.log("Введіть менше число")
+// }
 
 // if (sicret == secNum){
 //   console.log("WAW")
