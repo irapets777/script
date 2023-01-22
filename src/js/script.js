@@ -1,95 +1,95 @@
-let fruits = [
-  "apple",
-  "banana",
-  "orange",
-  "pear",
-  "grape",
-  "pineapple",
-  "strawberry",
-  "watermelon",
-  "kiwi",
-  "mango",
-  "peach",
-  "lemon",
-  "lime",
-  "blueberry",
-  "raspberry",
-  "blackberry",
-  "apricot",
-  "cherry",
-  "coconut",
-  "fig",
-  "pomegranate",
-  "plum",
-  "nectarine",
-  "persimmon",
-  "tangerine",
-  "papaya",
-  "guava",
-  "jackfruit",
-  "lychee",
-  "starfruit",
-  "cantaloupe",
-  "honeydew",
-  "mangosteen",
-  "pawpaw",
-  "durian",
-  "tamarind",
-  "mulberry",
-  "currant",
-  "gooseberry",
-  "rambutan",
-  "longan",
-  "dragonfruit",
-  "clementine",
-  "satsuma",
-  "mandarin",
-  "tangelo",
-  "yuzu",
-  "nectarine",
-  "persimmon",
-  "tangerine",
-  "papaya",
-  "guava",
-  "jackfruit",
-  "lychee",
-  "starfruit",
-  "cantaloupe",
-  "honeydew",
-  "mangosteen",
-  "pawpaw",
-  "durian",
-  "tamarind",
-  "mulberry",
-  "currant",
-  "gooseberry",
-  "rambutan",
-  "longan",
-  "dragonfruit",
-  "clementine",
-  "satsuma",
-  "mandarin",
-  "tangelo",
-  "yuzu",
-  "nectarine",
-  "persimmon",
-  "tangerine",
-  "papaya",
-  "guava",
-  "jackfruit",
-  "lychee",
-  "starfruit",
-  "cantaloupe",
-  "honeydew",
-  "mangosteen",
-  "pawpaw",
-  "durian",
-  "tamarind",
-  "mulberry",
-  "currant",
-  "gooseberry",
-  "rambutan",
-];
+// let fruits = [
+//   "apple",
+//   "banana",
+//   "orange",
+//   "pear",
+//   "grape",
+//   "pineapple",
+//   "strawberry",
+//   "watermelon",
+//   "kiwi",
+//   "mango",
+//   "peach",
+//   "lemon",
+//   "lime",
+//   "blueberry",
+//   "raspberry",
+//   "blackberry",
+//   "apricot",
+//   "cherry",
+//   "coconut",
+//   "fig",
+//   "pomegranate",
+//   "plum",
+//   "nectarine",
+//   "persimmon",
+//   "tangerine",
+//   "papaya",
+//   "guava",
+//   "jackfruit",
+//   "lychee",
+//   "starfruit",
+//   "cantaloupe",
+//   "honeydew",
+//   "mangosteen",
+//   "pawpaw",
+//   "durian",
+//   "tamarind",
+//   "mulberry",
+//   "currant",
+//   "gooseberry",
+//   "rambutan",
+//   "longan",
+//   "dragonfruit",
+//   "clementine",
+//   "satsuma",
+//   "mandarin",
+//   "tangelo",
+//   "yuzu",
+//   "nectarine",
+//   "persimmon",
+//   "tangerine",
+//   "papaya",
+//   "guava",
+//   "jackfruit",
+//   "lychee",
+//   "starfruit",
+//   "cantaloupe",
+//   "honeydew",
+//   "mangosteen",
+//   "pawpaw",
+//   "durian",
+//   "tamarind",
+//   "mulberry",
+//   "currant",
+//   "gooseberry",
+//   "rambutan",
+//   "longan",
+//   "dragonfruit",
+//   "clementine",
+//   "satsuma",
+//   "mandarin",
+//   "tangelo",
+//   "yuzu",
+//   "nectarine",
+//   "persimmon",
+//   "tangerine",
+//   "papaya",
+//   "guava",
+//   "jackfruit",
+//   "lychee",
+//   "starfruit",
+//   "cantaloupe",
+//   "honeydew",
+//   "mangosteen",
+//   "pawpaw",
+//   "durian",
+//   "tamarind",
+//   "mulberry",
+//   "currant",
+//   "gooseberry",
+//   "rambutan",
+// ];
 
 // let counter = fruits.length;
 // let counterloop = 0;
@@ -157,7 +157,7 @@ let familyList = [
   },
   {
     name: "Jane Doe",
-    age: 24,
+    age: 17,
   },
   {
     name: "Jack Doe",
@@ -173,32 +173,128 @@ let familyList = [
   },
 ];
 
-// console.log(familyList[0].name + " " + familyList[0].age);
-familyList.forEach((item)=>{
-  if(item.age >= 21){
-    console.log('You adult!')
+function checkAge(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+familyList.forEach((member)=>{
+  
+  if (checkAge(member.age) ) {
+    console.log('adult', member.age);
+  } else {
+    console.log('child', member.age);
   }
 })
+
+
+console.log(checkAge);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // console.log(familyList[0].name + " " + familyList[0].age);
+// familyList.forEach((item)=>{
+//   if(item.age >= 21){
+//     console.log('You adult!')
+//   }
+// })
+
+
+// const usersData = [
+//   {
+//       name: 'John',
+//       age: 25,
+//       surname: 'Doe',
+//       fatherName: 'Smith'
+//   },
+//   {
+//       name: 'Jane',
+//       age: 30,
+//       surname: 'Doe',
+//       fatherName: 'Sarah'
+//   },
+//   {
+//       name: 'Jack',
+//       age: 28,
+//       surname: 'Doe',
+//       fatherName: 'John'
+//   },
+//   {
+//       name: 'Jill',
+//       age: 32,
+//       surname: 'Doe',
+//       fatherName: 'Monica'
+//   }
+// ]
+
+// let counter = 0;
+
+
+// function getInitialsUser(surname, name, fatherName){
+//   counter++;
+//   if(counter <=3){
+//     return surname + " " + name[0] + "." + fatherName[0] + ".";
+//   }else{
+//     return "Function is called more than 3 times"
+//   }
+  // const Initials = surName + ' ' + name[0] + "." + fatherName[0] + ".";
+  // return Initials;
+// }
+
+// function displeyAlertIpnutText(text){
+//   alert(text);
+// }
+
+// const sayHello = (someText) => {
+//   console.log(someText);
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+// const inputText = prompt("Enter text to displey in alert");
+// displeyAlertIpnutText(inputText);
+
+
+// usersData.forEach((user)=>{
+//   const userInitials = getInitialsUser(
+//     user.surname,
+//     user.name, 
+//     user.fatherName
+//     );
+//   console.log(userInitials + " " + user.age)
+// })
+
+
+// const userInitials = getInitialsUser("Doe", "John", "Smith");
+// console.log(userInitials);
 
 
 
 
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -226,36 +322,9 @@ familyList.forEach((item)=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // const fruitsName = fruits.indexOf(position)
 // console.log(fruitsName)
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -358,27 +427,6 @@ familyList.forEach((item)=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // let name = "John";
 // let surname = "Doe";
 // let middleName = "Patric";
@@ -407,3 +455,7 @@ familyList.forEach((item)=>{
 
 
 // console.log("Data: ", name);
+
+
+
+
